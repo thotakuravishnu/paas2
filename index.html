@@ -1,18 +1,166 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.3">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    span.s1 {font-kerning: none}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Netflix Clone</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #141414;
+    color: white;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    padding: 20px 50px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #e50914;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.hero {
+    height: 90vh;
+    background: url('https://images.unsplash.com/photo-1524985069026-dd778a71c7b4') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.btn-play {
+    background-color: white;
+    color: black;
+}
+
+.btn-info {
+    background-color: rgba(109,109,110,0.7);
+    color: white;
+}
+
+.row {
+    margin: 20px 50px;
+}
+
+.row h2 {
+    margin-bottom: 10px;
+}
+
+.row-posters {
+    display: flex;
+    overflow-x: auto;
+}
+
+.row-posters img {
+    width: 200px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+    border-radius: 4px;
+}
+
+.row-posters img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: gray;
+}
+</style>
 </head>
 <body>
-<p class="p1"><span class="s1">&lt;h1&gt;PaaS Platform running on Railway Public Cloud&lt;/h1&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p&gt;Practical 7 - Public Cloud PaaS Implementation&lt;/p&gt;</span></p>
+
+<header>
+    <div class="logo">NETFLIX</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">TV Shows</a>
+        <a href="#">Movies</a>
+        <a href="#">My List</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Featured Movie</h1>
+        <p>Watch the latest blockbuster movies and trending TV shows anytime, anywhere.</p>
+        <button class="btn btn-play">▶ Play</button>
+        <button class="btn btn-info">ℹ More Info</button>
+    </div>
+</section>
+
+<section class="row">
+    <h2>Trending Now</h2>
+    <div class="row-posters">
+        <img src="https://source.unsplash.com/300x450/?movie" alt="">
+        <img src="https://source.unsplash.com/300x450/?cinema" alt="">
+        <img src="https://source.unsplash.com/300x450/?film" alt="">
+        <img src="https://source.unsplash.com/300x450/?tvshow" alt="">
+        <img src="https://source.unsplash.com/300x450/?action-movie" alt="">
+    </div>
+</section>
+
+<section class="row">
+    <h2>Popular on Netflix</h2>
+    <div class="row-posters">
+        <img src="https://source.unsplash.com/300x450/?drama" alt="">
+        <img src="https://source.unsplash.com/300x450/?thriller" alt="">
+        <img src="https://source.unsplash.com/300x450/?comedy" alt="">
+        <img src="https://source.unsplash.com/300x450/?horror" alt="">
+        <img src="https://source.unsplash.com/300x450/?series" alt="">
+    </div>
+</section>
+
+<footer>
+    © 2026 Netflix Clone UI | Created for educational purposes
+</footer>
+
 </body>
 </html>
